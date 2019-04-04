@@ -1,13 +1,13 @@
 <?php
 /*
- Plugin Name: Advanced Sitemap Generator
- Plugin URI: http://www.csschopper.com/
+ Plugin Name: Wordpress Sitemap Generator Shortcode
+ Plugin URI: http://www.htmlpanda.com/
  Description: powerfull plugin to show all your pages and post on front end in a sitemap.
  Version: 1.1.0
- Author: Deepak Tripathi
- Author URI: http://www.csschopper.com/
- Author Email: deepak@sparxtechnologies.com
- License: GPL
+ Author: Prashant Singh Sengar
+ Author URI: http://www.htmlpanda.com/
+ Author Email: sales@htmlpanda.com
+ License: GPLv2 or later
  */
 
 
@@ -25,20 +25,11 @@ function sitemapfunction()
 <div>
 	<h2>Sitemap Setting</h2>
 </div>
-<p>This plugin is the most powerfull plugin which easily display you
-	post and page through shortcode on front end.You just need to put
-	shortcode([sitemap]) on your page/post.</p>
-<p>If you want to exclude pages then put ([sitemap excludepage="1,4"])
-	where 1,4 are the page id seperated by the comma's.</p>
-<p>If you want to exclude categories then put ([sitemap
-	excludepage="1,4" excludecat="6,3"]) where 6,3 are the category id
-	seperated by the comma's.</p>
-<p>If you want to exclude posts then put ([sitemap excludepage="1,4"
-	excludecat="6,3" excludepost="1,183"]) where 1,183 are the post id
-	seperated by the comma's.</p>
-<p>If you don't want to show any of the post put ([sitemap
-	showpost="no"])</p>
-</br>
+<p>This plugin is the most powerfull plugin which easily display you post and page through shortcode on front end.You just need to put shortcode([sitemap]) on your page/post.</p>
+<p>If you want to exclude pages then put ([sitemap excludepage="1,4"]) where 1,4 are the page id seperated by the comma's.</p>
+<p>If you want to exclude categories then put ([sitemap excludepage="1,4" excludecat="6,3"]) where 6,3 are the category id seperated by the comma's.</p>
+<p>If you want to exclude posts then put ([sitemap excludepage="1,4" excludecat="6,3" excludepost="1,183"]) where 1,183 are the post id seperated by the comma's.</p>
+<p>If you don't want to show any of the post put ([sitemap showpost="no"])</p>
 </br>
 <div>
 	<h2>Screenshot1</h2>
@@ -129,6 +120,5 @@ function sitemap_function($atts)
 	}
         $display.='</div>';
 	return $display;
-
 }
 ?>
